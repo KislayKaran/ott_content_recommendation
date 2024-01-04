@@ -55,7 +55,7 @@ def extract_movie_details(movie_id):
         'Title': movie_details_row.get('title', None),
         'Tagline': movie_details_row.get('tagline', None),
         'Cast': movie_details_row.get('cast', None),
-        'Director': movie_details_row.get('director', None),
+        'Director': movie_details_row.get('Director', None),
         'Genres': genres,  # Modified 'Genres' entry
         'Language': movie_details_row.get('original_language', None),
         'Runtime (minutes)': movie_details_row.get('runtime', None),
