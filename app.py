@@ -95,6 +95,7 @@ st.markdown(
     """
     <style>
     .header-style {
+        color: black; /* Font color */
         background-color: tomato; /* Off-white background color */
         padding: 10px; /* Padding around the header */
         border-radius: 5px; /* Rounded corners */
@@ -118,7 +119,7 @@ movies_details = pd.DataFrame(movies_details)
 
 movie_list = movies['title'].values
 html_label = (
-    '<div style="background-color: #f8f8ff; padding: 8px; border-radius: 5px; '
+    '<div style="color: black; background-color: #f8f8ff; padding: 8px; border-radius: 5px; '
     'font-weight: bold;">Type or select a movie from the dropdown</div>'
 )
 st.markdown(html_label, unsafe_allow_html=True)
